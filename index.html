@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nós, o Povo Soviético: Jones Manoel 2030</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='16' fill='%23CC0000'/%3E%3Cpolygon points='50,12 61,40 91,40 67,58 76,86 50,69 24,86 33,58 9,40 39,40' fill='%23FFD700' stroke='%23000' stroke-width='3'/%3E%3C/svg%3E">
+    <meta name="description" content="Contagem regressiva humorística para a posse de Jones Manoel em 2030.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jones Manoel Presidente: contagem regressiva para a posse">
+    <meta property="og:description" content="Quanto falta para a posse? Sorteie decretos, emita sua credencial e compartilhe.">
+    <meta property="og:image" content="img/jones-perfil.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;800;900&family=Press+Start+2P&family=Russo+One&display=swap" rel="stylesheet">
+    <!-- Tone.js para efeitos sonoros e hino 8-bit -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.8.49/Tone.js"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'russo': ['"Russo One"', 'sans-serif'],
+                        'bebas': ['"Bebas Neue"', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                        'pixel': ['"Press Start 2P"', 'cursive'],
+                    },
+                    colors: {
+                        'soviet-red': '#CC0000',
+                        'soviet-darkred': '#7A0000',
+                        'soviet-gold': '#FFD700',
+                        'soviet-amber': '#FFAA00',
+                        'soviet-cream': '#FFF8E7',
+                    },
+                    animation: {
+                        'spin-slow': 'spin 20s linear infinite',
+                        'bounce-fast': 'bounce 0.8s infinite',
+                        'pulse-glow': 'pulseGlow 2s infinite alternate',
+                        'marquee': 'marquee 25s linear infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        pulseGlow: {
+                            '0%': { boxShadow: '0 0 15px rgba(255, 215, 0, 0.4), inset 0 0 10px rgba(255, 215, 0, 0.2)' },
+                            '100%': { boxShadow: '0 0 35px rgba(255, 215, 0, 0.9), inset 0 0 20px rgba(255, 215, 0, 0.5)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-12px) rotate(2deg)' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #4a0000;
+            color: #FFF8E7;
+            overflow-x: hidden;
+        }
+
+        /* Sunburst Constructivist Background */
+        .sunburst-bg {
+            background: repeating-conic-gradient(
+                from 0deg,
+                #800000 0deg 10deg,
+                #600000 10deg 20deg
+            );
+        }
+
+        /* Estilo de Pôster Soviético / Brutalista */
+        .constructivist-card {
+            background: linear-gradient(145deg, #900000, #580000);
+            border: 4px solid #FFD700;
+            box-shadow: 8px 8px 0px #000000;
+            transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        .constructivist-card:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 12px 12px 0px #000000, 0 0 25px rgba(255, 215, 0, 0.4);
+        }
+
+        .constructivist-btn {
+            background: #FFD700;
+            color: #7A0000;
+            border: 3px solid #000;
+            box-shadow: 6px 6px 0px #000;
+            transition: all 0.15s ease;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .constructivist-btn:hover {
+            background: #FFF8E7;
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0px #000;
+        }
+
+        .constructivist-btn:active {
+            transform: translate(4px, 4px);
+            box-shadow: 2px 2px 0px #000;
+        }
+
+        /* Marquee Infinito */
+        .marquee-wrapper {
+            overflow: hidden;
+            white-space: nowrap;
+            width: 100%;
+            background: #FFD700;
+            color: #800000;
+            border-top: 4px solid #000;
+            border-bottom: 4px solid #000;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marqueeMove 28s linear infinite;
+        }
+
+        @keyframes marqueeMove {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Sombra de texto pesada */
+        .text-shadow-brutal {
+            text-shadow: 4px 4px 0px #000000, 6px 6px 0px rgba(204, 0, 0, 0.7);
+        }
+
+        .text-shadow-sm-brutal {
+            text-shadow: 2px 2px 0px #000000;
+        }
+
+        /* Foto com tratamento de cartaz: contraste + trama de meio-tom */
+        .poster-photo img { filter: contrast(1.12) saturate(1.15) sepia(.18); }
+        .poster-photo::after {
+            content: "";
+            position: absolute; inset: 0;
+            background-image: radial-gradient(rgba(0,0,0,.28) 1px, transparent 1.4px);
+            background-size: 4px 4px;
+            mix-blend-mode: multiply;
+            pointer-events: none;
+        }
+
+        /* Banner de discurso com duotone vermelho */
+        .speech-banner img { filter: grayscale(1) contrast(1.1) brightness(1.6); }
+        .speech-banner .duotone {
+            position: absolute; inset: 0;
+            background: linear-gradient(100deg, #7A0000 0%, #7A0000 38%, rgba(204,0,0,.85) 55%, rgba(230,40,20,.7) 100%);
+            mix-blend-mode: multiply;
+        }
+
+        #scene { image-rendering: pixelated; image-rendering: crisp-edges; }
+        .ministry-icon {
+            transition: transform .25s ease;
+        }
+        .constructivist-card:hover .ministry-icon { transform: rotate(-8deg) scale(1.1); }
+
+        @media (prefers-reduced-motion: reduce) {
+            .animate-spin-slow, .marquee-content, .animate-bounce, .animate-ping, .animate-pulse-glow { animation: none !important; }
+        }
+
+        /* Canvas de partículas no topo */
+        #confetti-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            pointer-events: none;
+            z-index: 50;
+        }
+
+        /* Barra de Rolagem Customizada */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #4a0000;
+            border-left: 2px solid #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #FFD700;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+<body class="font-inter min-h-screen relative selection:bg-soviet-gold selection:text-soviet-darkred">
+
+    <!-- Canvas para chuva de livros, halteres, cuscuz e estrelas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Sprite de ícones SVG reutilizáveis -->
+    <svg width="0" height="0" class="absolute" aria-hidden="true">
+        <defs>
+            <symbol id="i-star" viewBox="0 0 100 100">
+                <polygon points="50,4 62,37 97,37 69,58 80,92 50,71 20,92 31,58 3,37 38,37" stroke-linejoin="round"/>
+            </symbol>
+            <!-- Foice e martelo -->
+            <symbol id="i-hs" viewBox="0 0 550 550">
+                <g transform="translate(18 -824)">
+                    <path d="m 157.54301,922.36336 -16.97149,16.9707 -45.256019,45.2539 -56.570993,56.57034 62.227502,62.2246 56.571,-56.5684 299.82842,299.8124 a 32.001491,31.999993 0 0 0 45.25601,0 32.001491,31.999993 0 0 0 0,-45.2539 l -299.82646,-299.8143 16.9715,-16.97074 50.91448,-50.91015 z"/>
+                    <path d="m 255.989,844.0001 c 0,0 168.00781,127.99997 168.00783,256 C 423.99684,1164 367.99425,1236 271.98975,1236 c -64.00296,0 -104.24119,-47.7637 -104.24119,-47.7637 l -11.31302,11.3125 a 16.000745,15.999996 0 0 0 -22.62801,0 16.000745,15.999996 0 0 0 -2.47863,3.2227 32.001491,31.999993 0 0 0 -31.464359,8.0918 32.001491,31.999993 0 0 0 -9.330512,21.5449 C 65.101725,1246.1605 22.969246,1272.9834 4.2643862,1308 l 0.029298,0.029 A 32.001491,31.999993 0 0 0 4.2643862,1340 32.001491,31.999993 0 0 0 47.979313,1351.7129 c 35.025561,-18.708 61.854737,-60.8518 75.605087,-86.2813 a 32.001491,31.999993 0 0 0 21.53616,-9.3144 32.001491,31.999993 0 0 0 7.93201,-13.2012 c 24.51647,23.0544 71.44493,57.084 134.93792,57.084 96.00451,0 200.00932,-72 200.00932,-199.9999 0,-160.00002 -232.01081,-256 -232.01081,-256 z"/>
+                </g>
+            </symbol>
+            <!-- Haltere -->
+            <symbol id="i-dumbbell" viewBox="0 0 100 100">
+                <rect x="30" y="44" width="40" height="12" rx="2"/>
+                <rect x="18" y="26" width="12" height="48" rx="3"/>
+                <rect x="70" y="26" width="12" height="48" rx="3"/>
+                <rect x="6" y="36" width="12" height="28" rx="3"/>
+                <rect x="82" y="36" width="12" height="28" rx="3"/>
+            </symbol>
+            <!-- Livro aberto -->
+            <symbol id="i-book" viewBox="0 0 100 100">
+                <path d="M50 24 C38 16 20 16 6 22 L6 80 C20 74 38 74 50 82 C62 74 80 74 94 80 L94 22 C80 16 62 16 50 24 Z M46 30 L46 74 C38 70 28 68 14 70 L14 28 C28 26 38 26 46 30 Z M54 30 C62 26 72 26 86 28 L86 70 C72 68 62 70 54 74 Z" fill-rule="evenodd"/>
+            </symbol>
+            <!-- Escudo de clube com bola -->
+            <symbol id="i-club" viewBox="0 0 100 100">
+                <path d="M14 10 H86 V54 C86 76 66 90 50 96 C34 90 14 76 14 54 Z M24 20 V54 C24 70 38 80 50 85 C62 80 76 70 76 54 V20 Z" fill-rule="evenodd"/>
+                <polygon points="50,28 61,36 57,49 43,49 39,36"/>
+                <path d="M50 52 L50 62 M39 36 L30 40 M61 36 L70 40 M43 49 L38 58 M57 49 L62 58" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </symbol>
+            <!-- Espiga de milho -->
+            <symbol id="i-corn" viewBox="0 0 100 100">
+                <path d="M50 8 C68 14 72 52 62 74 C58 82 42 82 38 74 C28 52 32 14 50 8 Z"/>
+                <path d="M50 96 C30 92 16 74 18 44 C28 56 38 64 46 78 Z" opacity=".7"/>
+                <path d="M50 96 C70 92 84 74 82 44 C72 56 62 64 54 78 Z" opacity=".7"/>
+                <g stroke="#FFD700" stroke-width="2.4" stroke-linecap="round">
+                    <path d="M42 22 H58 M40 32 H60 M40 42 H60 M41 52 H59 M43 62 H57 M46 72 H54 M50 14 V76" />
+                </g>
+            </symbol>
+            <!-- Punho cerrado -->
+            <symbol id="i-fist" viewBox="0 0 100 100">
+                <path d="M28 40 C28 28 40 24 50 28 C54 22 66 22 70 30 C78 28 84 36 80 44 L78 70 C78 82 70 90 58 90 H42 C32 90 26 82 28 72 Z"/>
+                <path d="M40 40 V56 M54 38 V54 M67 42 V56" stroke="#000" stroke-opacity=".45" stroke-width="3" fill="none" stroke-linecap="round"/>
+                <rect x="30" y="84" width="46" height="12" rx="2" fill="#000" fill-opacity=".5"/>
+            </symbol>
+
+            <symbol id="i-sound-on" viewBox="0 0 100 100">
+                <path d="M8 38 H26 L50 16 V84 L26 62 H8 Z"/>
+                <path d="M64 36 Q76 50 64 64 M74 24 Q94 50 74 76" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+            </symbol>
+            <symbol id="i-sound-off" viewBox="0 0 100 100">
+                <path d="M8 38 H26 L50 16 V84 L26 62 H8 Z"/>
+                <path d="M66 38 L92 64 M92 38 L66 64" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/>
+            </symbol>
+            <symbol id="i-megaphone" viewBox="0 0 100 100">
+                <path d="M10 38 H32 L66 16 V84 L32 62 H10 Z"/>
+                <rect x="20" y="62" width="14" height="24" rx="3"/>
+                <path d="M76 34 Q88 50 76 66" fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round"/>
+            </symbol>
+            <symbol id="i-bolt" viewBox="0 0 100 100">
+                <polygon points="58,4 18,56 44,56 36,96 82,40 55,40" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="i-scroll" viewBox="0 0 100 100">
+                <path d="M20 10 H80 V78 C80 86 74 90 66 90 H30 C24 90 20 86 20 78 Z M32 26 H68 V33 H32 Z M32 43 H68 V50 H32 Z M32 60 H56 V67 H32 Z" fill-rule="evenodd"/>
+            </symbol>
+            <symbol id="i-hammer" viewBox="0 0 100 100">
+                <path d="M18 90 L60 36" stroke="currentColor" stroke-width="10" stroke-linecap="round"/>
+                <rect x="38" y="12" width="46" height="22" rx="3" transform="rotate(32 61 23)"/>
+            </symbol>
+            <symbol id="i-dice" viewBox="0 0 100 100">
+                <path fill-rule="evenodd" d="M16 6 H84 A10 10 0 0 1 94 16 V84 A10 10 0 0 1 84 94 H16 A10 10 0 0 1 6 84 V16 A10 10 0 0 1 16 6 Z M30 24 a7 7 0 1 0 .01 0 Z M70 24 a7 7 0 1 0 .01 0 Z M50 43 a7 7 0 1 0 .01 0 Z M30 62 a7 7 0 1 0 .01 0 Z M70 62 a7 7 0 1 0 .01 0 Z"/>
+            </symbol>
+            <symbol id="i-clipboard" viewBox="0 0 100 100">
+                <path fill-rule="evenodd" d="M18 14 H36 A14 10 0 0 1 64 14 H82 V94 H18 Z M32 42 H68 V49 H32 Z M32 58 H68 V65 H32 Z M32 74 H54 V81 H32 Z"/>
+            </symbol>
+            <symbol id="i-check" viewBox="0 0 100 100">
+                <path d="M16 54 L40 78 L86 24" fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="i-globe" viewBox="0 0 100 100">
+                <g fill="none" stroke="currentColor" stroke-width="7" stroke-linecap="round">
+                    <circle cx="50" cy="50" r="40"/><ellipse cx="50" cy="50" rx="16" ry="40"/><path d="M10 50 H90 M18 28 H82 M18 72 H82"/>
+                </g>
+            </symbol>
+            <symbol id="i-flag" viewBox="0 0 100 100">
+                <rect x="14" y="8" width="8" height="86" rx="3"/>
+                <path d="M22 12 C40 4 54 22 72 14 C80 11 86 12 90 14 V54 C86 52 80 51 72 54 C54 62 40 44 22 52 Z"/>
+            </symbol>
+            <symbol id="i-flame" viewBox="0 0 100 100">
+                <path d="M52 4 C56 26 80 38 80 62 C80 82 66 96 50 96 C32 96 20 82 20 64 C20 50 28 42 34 34 C36 44 40 48 44 48 C42 30 44 16 52 4 Z"/>
+            </symbol>
+            <symbol id="i-ball" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="7"/>
+                <polygon points="50,30 68,43 61,64 39,64 32,43"/>
+                <path d="M50 30 V10 M68 43 L88 36 M61 64 L74 82 M39 64 L26 82 M32 43 L12 36" stroke="currentColor" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </symbol>
+            <symbol id="i-download" viewBox="0 0 100 100">
+                <path d="M50 8 V60 M28 40 L50 62 L72 40" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M12 70 V88 H88 V70" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+            </symbol>
+            <symbol id="i-share" viewBox="0 0 100 100">
+                <circle cx="24" cy="50" r="13"/><circle cx="76" cy="22" r="13"/><circle cx="76" cy="78" r="13"/>
+                <path d="M24 50 L76 22 M24 50 L76 78" stroke="currentColor" stroke-width="7" fill="none"/>
+            </symbol>
+            <symbol id="i-whatsapp" viewBox="0 0 100 100">
+                <path d="M50 8 C27 8 9 26 9 49 C9 57 11 64 15 70 L9 92 L32 86 C38 90 44 91 50 91 C73 91 91 73 91 50 C91 27 73 8 50 8 Z M50 17 C68 17 82 31 82 50 C82 68 68 82 50 82 C44 82 39 81 34 78 L22 81 L25 69 C21 64 18 57 18 50 C18 31 32 17 50 17 Z M36 32 C33 35 31 40 33 46 C37 57 46 65 56 68 C62 70 67 67 69 62 L69 58 L60 54 L56 58 C51 56 44 50 42 44 L46 40 L42 31 Z" fill-rule="evenodd"/>
+            </symbol>
+            <symbol id="i-link" viewBox="0 0 100 100">
+                <path d="M42 58 C34 50 34 40 42 32 L58 16 C66 8 78 8 86 16 C94 24 94 36 86 44 L76 54 M58 42 C66 50 66 60 58 68 L42 84 C34 92 22 92 14 84 C6 76 6 64 14 56 L24 46" fill="none" stroke="currentColor" stroke-width="9" stroke-linecap="round"/>
+            </symbol>
+            <symbol id="i-leaf" viewBox="0 0 100 100">
+                <path d="M14 86 C14 40 40 14 88 12 C86 60 60 86 20 86 Z"/>
+                <path d="M14 86 L58 42" stroke="#000" stroke-opacity=".45" stroke-width="5" fill="none" stroke-linecap="round"/>
+            </symbol>
+            <symbol id="i-play" viewBox="0 0 100 100"><polygon points="24,10 88,50 24,90"/></symbol>
+            <symbol id="i-pause" viewBox="0 0 100 100"><rect x="20" y="10" width="22" height="80"/><rect x="58" y="10" width="22" height="80"/></symbol>
+            <symbol id="i-replay" viewBox="0 0 100 100"><path d="M20 50 A32 32 0 1 0 34 24" fill="none" stroke="currentColor" stroke-width="10" stroke-linecap="round"/><polygon points="14,10 44,28 14,44"/></symbol>
+        </defs>
+    </svg>
+
+    <!-- Background Rotativo de Raios de Sol -->
+    <div class="fixed inset-0 sunburst-bg opacity-45 pointer-events-none z-0"></div>
+
+    <!-- Marquee Topo: Notícias Urgentes de 2030 -->
+    <div class="marquee-wrapper py-2 relative z-20 font-russo text-sm md:text-base tracking-wider">
+        <div class="marquee-content">
+            <span class="mx-6">★ PLANTÃO 2030: NÓS, O POVO SOVIÉTICO BRASILEIRO, CONVOCAMOS TODOS PARA A POSSE ★</span>
+            <span class="mx-6"><svg class="w-4 h-4 inline-block align-[-2px]" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-dumbbell"/></svg> DECRETO Nº 01: WHEY PROTEIN E CREATINA AGORA SÃO DISTRIBUÍDOS PELO SUS ★</span>
+            <span class="mx-6"><svg class="w-4 h-4 inline-block align-[-2px]" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-book"/></svg> META DO PLANO QUINQUENAL: LER 3 LIVROS DO DOMENICO LOSURDO POR SEMANA ★</span>
+            <span class="mx-6"><svg class="w-4 h-4 inline-block align-[-2px]" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-ball"/></svg> NÁUTICO CAMPEÃO DA LIBERTADORES E DO MUNDIAL DE CLUBES POR DECRETO PRESIDENCIAL ★</span>
+            <span class="mx-6"><svg class="w-4 h-4 inline-block align-[-2px]" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-corn"/></svg> CUSCUZ PAULISTA É OFICIALMENTE PROIBIDO EM TODO O TERRITÓRIO DA URSAL ★</span>
+            <!-- Duplicado para loop perfeito -->
+            <span class="mx-6">★ PLANTÃO 2030: NÓS, O POVO SOVIÉTICO BRASILEIRO, CONVOCAMOS TODOS PARA A POSSE ★</span>
+            <span class="mx-6"><svg class="w-4 h-4 inline-block align-[-2px]" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-dumbbell"/></svg> DECRETO Nº 01: WHEY PROTEIN E CREATINA AGORA SÃO DISTRIBUÍDOS PELO SUS ★</span>
+            <span class="mx-6"><svg class="w-4 h-4 inline-block align-[-2px]" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-book"/></svg> META DO PLANO QUINQUENAL: LER 3 LIVROS DO DOMENICO LOSURDO POR SEMANA ★</span>
+            <span class="mx-6"><svg class="w-4 h-4 inline-block align-[-2px]" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-ball"/></svg> NÁUTICO CAMPEÃO DA LIBERTADORES E DO MUNDIAL DE CLUBES POR DECRETO PRESIDENCIAL ★</span>
+            <span class="mx-6"><svg class="w-4 h-4 inline-block align-[-2px]" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-corn"/></svg> CUSCUZ PAULISTA É OFICIALMENTE PROIBIDO EM TODO O TERRITÓRIO DA URSAL ★</span>
+        </div>
+    </div>
+
+    <!-- Barra de Navegação / Controle de Som -->
+    <header class="relative z-20 max-w-7xl mx-auto px-4 pt-6 pb-2 flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-3 bg-black/50 border-2 border-soviet-gold px-4 py-2 rounded-lg backdrop-blur-sm">
+            <!-- Mini Emblema SVG: Estrela + Haltere + Livro -->
+            <svg class="w-10 h-10 shrink-0" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="46" fill="#CC0000" stroke="#FFD700" stroke-width="4"/>
+                <circle cx="50" cy="50" r="40" fill="none" stroke="#FFD700" stroke-width="1.5" stroke-dasharray="3 4" class="animate-spin-slow" style="transform-origin:50px 50px"/>
+                <use href="#i-hs" x="22" y="26" width="56" height="56" fill="#FFD700"/>
+                <use href="#i-star" x="38" y="6" width="24" height="24" fill="#FFD700" stroke="#000" stroke-width="2"/>
+            </svg>
+            <div>
+                <span class="block font-russo text-xs text-soviet-gold tracking-widest uppercase">Comitê Central Eleitoral</span>
+                <span class="font-bebas text-xl tracking-wider text-white">URSAL • BRASÍLIA - RECIFE 2030</span>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3">
+            <button id="music-toggle-btn" onclick="toggleAnthem()" class="constructivist-btn px-4 py-2.5 rounded-lg text-xs md:text-sm flex items-center gap-2">
+                <span id="music-icon"><svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-sound-off"/></svg></span>
+                <span id="music-text">TOCAR HINO 8-BIT</span>
+            </button>
+
+            <button onclick="triggerRevolutionRain(65)" class="constructivist-btn !bg-soviet-red !text-soviet-gold px-4 py-2.5 rounded-lg text-xs md:text-sm flex items-center gap-2">
+                <svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-hs"/></svg>
+                <span>CHUVA DE REVOLUÇÃO!</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="relative z-10 max-w-7xl mx-auto px-4 py-8 md:py-12">
+
+        <!-- Seção Hero: Arte SVG do Jones + Título + Contagem Regressiva -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-14">
+
+            <!-- Coluna Esquerda: Pôster Ilustrado em SVG Animado -->
+            <div class="lg:col-span-5 flex flex-col items-center">
+                <div class="relative w-72 sm:w-96 lg:w-full max-w-md">
+                    <!-- Estrela gigante girando atrás do pôster -->
+                    <svg class="absolute -z-0 -top-10 -left-10 -right-10 w-[calc(100%+5rem)] h-auto text-soviet-gold animate-spin-slow opacity-60 pointer-events-none" viewBox="0 0 100 100" aria-hidden="true" style="top:-3rem">
+                        <use href="#i-star" fill="currentColor" fill-opacity=".18" stroke="currentColor" stroke-width=".8"/>
+                    </svg>
+
+                    <div class="relative z-10 constructivist-card rounded-2xl p-3 overflow-hidden group">
+                        <!-- Selo de Aprovação no Canto -->
+                        <div class="absolute top-5 left-5 z-20 bg-soviet-gold text-black font-russo text-[10px] px-2.5 py-1 rounded border-2 border-black uppercase tracking-wider -rotate-6 shadow">
+                            100% Dialético &amp; Maromba
+                        </div>
+
+                        <!-- Foto real (Wikimedia Commons) com tratamento de cartaz -->
+                        <figure class="poster-photo relative rounded-xl overflow-hidden border-4 border-black aspect-square">
+                            <img src="img/jones-perfil.jpg" alt="Jones Manoel falando à imprensa" width="400" height="400"
+                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" fetchpriority="high">
+                            <!-- Raios construtivistas sobre a foto -->
+                            <svg class="absolute inset-0 w-full h-full pointer-events-none mix-blend-multiply" viewBox="0 0 100 142" preserveAspectRatio="none" aria-hidden="true">
+                                <defs>
+                                    <linearGradient id="posterFade" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0" stop-color="#CC0000" stop-opacity=".0"/>
+                                        <stop offset=".55" stop-color="#CC0000" stop-opacity=".0"/>
+                                        <stop offset="1" stop-color="#580000" stop-opacity=".92"/>
+                                    </linearGradient>
+                                </defs>
+                                <rect width="100" height="142" fill="url(#posterFade)"/>
+                                <polygon points="0,0 34,0 0,52" fill="#CC0000" fill-opacity=".55"/>
+                                <polygon points="100,142 100,96 58,142" fill="#FFD700" fill-opacity=".0"/>
+                            </svg>
+                            <svg class="absolute top-3 right-3 w-10 h-10 text-soviet-gold drop-shadow-[2px_2px_0_#000]" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-hs" fill="currentColor"/></svg>
+
+                            <figcaption class="absolute inset-x-0 bottom-0 p-3 pt-10">
+                                <div class="font-bebas text-4xl leading-none text-white text-shadow-sm-brutal tracking-wide">JONES MANOEL</div>
+                                <div class="font-russo text-[11px] text-soviet-gold tracking-widest uppercase flex items-center gap-1.5">
+                                    <svg class="w-3 h-3" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star" fill="currentColor"/></svg>
+                                    Presidente • Posse 2030
+                                </div>
+                            </figcaption>
+                        </figure>
+
+                        <div class="mt-3 flex items-center justify-between gap-2">
+                            <div class="bg-black/80 text-soviet-gold font-pixel text-[9px] px-2.5 py-1.5 rounded border border-soviet-gold">
+                                LVL 99: MARXISTA-LENINISTA
+                            </div>
+                            <svg class="w-8 h-8 text-soviet-gold" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-dumbbell" fill="currentColor"/></svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Botão de Áudio / Frase de Efeito -->
+                <button onclick="speakCatchphrase()" class="mt-4 constructivist-btn px-6 py-3 rounded-xl text-sm flex items-center gap-3">
+                    <svg class="w-6 h-6" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-megaphone"/></svg>
+                    <span>OUVIR PALAVRA DE ORDEM!</span>
+                </button>
+                <p id="speech-bubble" class="mt-3 text-center font-russo text-soviet-gold text-sm min-h-[2.5rem] max-w-md px-4 py-1.5 bg-black/60 border border-soviet-gold/50 rounded-lg">
+                    "Camarada, você já treinou perna e leu Losurdo hoje?"
+                </p>
+            </div>
+
+            <!-- Coluna Direita: Manchete e Relógio Regressivo -->
+            <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
+                
+                <div class="inline-flex items-center self-center lg:self-start gap-2 bg-soviet-gold text-black font-russo text-xs md:text-sm px-4 py-1.5 rounded-full border-2 border-black shadow mb-4">
+                    <span class="animate-ping inline-block w-2.5 h-2.5 rounded-full bg-soviet-red"></span>
+                    <span>META: 1º DE JANEIRO DE 2030 • 15:00 BRT</span>
+                </div>
+
+                <h1 class="font-russo uppercase leading-none text-white text-shadow-brutal mb-3">
+                    <span class="block text-5xl sm:text-6xl md:text-7xl text-soviet-gold">Jones Manoel</span>
+                    <span class="block text-4xl sm:text-5xl md:text-6xl">Presidente</span>
+                    <span class="block mt-3 text-base sm:text-lg md:text-xl tracking-widest text-soviet-cream/90">Contagem regressiva para a posse</span>
+                </h1>
+
+                <p class="font-inter text-base sm:text-lg text-soviet-cream/90 mb-8 max-w-2xl mx-auto lg:mx-0 font-semibold">
+                    Faltam poucos anos para a subida da rampa do Palácio do Planalto ao som de brega-funk soviético, distribuição gratuita de Creatina estatal e a fundação oficial da <span class="text-soviet-gold underline decoration-2">URSAL</span>.
+                </p>
+
+                <!-- Grid dos Contadores (Dias, Horas, Minutos, Segundos, Milissegundos) -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 mb-6">
+                    <!-- Dias -->
+                    <div class="constructivist-card rounded-2xl p-4 sm:p-5 text-center relative overflow-hidden">
+                        <div class="text-xs font-russo text-soviet-gold/80 uppercase tracking-widest mb-1">Dias de Luta</div>
+                        <div id="cd-days" class="font-bebas text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-white text-shadow-sm-brutal leading-none">0000</div>
+                        <div class="mt-2 h-1.5 w-full bg-black/50 rounded-full overflow-hidden">
+                            <div class="h-full bg-soviet-gold w-3/4"></div>
+                        </div>
+                    </div>
+
+                    <!-- Horas -->
+                    <div class="constructivist-card rounded-2xl p-4 sm:p-5 text-center relative overflow-hidden">
+                        <div class="text-xs font-russo text-soviet-gold/80 uppercase tracking-widest mb-1">Horas</div>
+                        <div id="cd-hours" class="font-bebas text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-white text-shadow-sm-brutal leading-none">00</div>
+                        <div class="mt-2 h-1.5 w-full bg-black/50 rounded-full overflow-hidden">
+                            <div id="bar-hours" class="h-full bg-soviet-gold transition-all duration-300" style="width: 50%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Minutos -->
+                    <div class="constructivist-card rounded-2xl p-4 sm:p-5 text-center relative overflow-hidden">
+                        <div class="text-xs font-russo text-soviet-gold/80 uppercase tracking-widest mb-1">Minutos</div>
+                        <div id="cd-minutes" class="font-bebas text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-white text-shadow-sm-brutal leading-none">00</div>
+                        <div class="mt-2 h-1.5 w-full bg-black/50 rounded-full overflow-hidden">
+                            <div id="bar-minutes" class="h-full bg-soviet-gold transition-all duration-300" style="width: 50%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Segundos -->
+                    <div class="constructivist-card rounded-2xl p-4 sm:p-5 text-center relative overflow-hidden animate-pulse-glow">
+                        <div class="text-xs font-russo text-soviet-gold uppercase tracking-widest mb-1">Segundos</div>
+                        <div id="cd-seconds" class="font-bebas text-5xl sm:text-6xl lg:text-6xl xl:text-7xl text-soviet-gold text-shadow-sm-brutal leading-none">00</div>
+                        <div class="mt-2 h-1.5 w-full bg-black/50 rounded-full overflow-hidden">
+                            <div id="bar-seconds" class="h-full bg-white transition-all duration-200" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sub-contador Dialético em Tempo Real -->
+                <div class="constructivist-card rounded-xl p-4 bg-black/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-8 h-8 text-soviet-gold animate-bounce" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-dumbbell"/></svg>
+                        <div class="text-left">
+                            <div class="text-xs text-soviet-gold font-russo uppercase">Progresso do Plano Quinquenal (2026 → 2030)</div>
+                            <div class="text-sm text-white font-bold">Acúmulo de Forças Produtivas e Hipertrofia Popular</div>
+                        </div>
+                    </div>
+                    <div class="font-pixel text-sm sm:text-base text-soviet-gold bg-black px-3 py-2 rounded border border-soviet-gold" id="dialectic-percentage">
+                        78.45219%
+                    </div>
+                </div>
+
+                <!-- Compartilhar a contagem -->
+                <div class="mt-5 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                    <button onclick="shareCountdownWhatsApp()" class="constructivist-btn !bg-[#25D366] !text-black py-2.5 px-4 rounded-xl text-xs sm:text-sm flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-whatsapp"/></svg>
+                        <span>MANDAR NO WHATSAPP</span>
+                    </button>
+                    <button onclick="copyPageLink()" class="constructivist-btn !bg-black !text-soviet-gold py-2.5 px-4 rounded-xl text-xs sm:text-sm flex items-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-link"/></svg>
+                        <span id="link-feedback">COPIAR LINK</span>
+                    </button>
+                    <button onclick="etabaco()" class="constructivist-btn !bg-soviet-cream !text-soviet-darkred py-2.5 px-4 rounded-xl text-xs sm:text-sm flex items-center gap-2 -rotate-2">
+                        <svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-leaf"/></svg>
+                        <span>É TABACO!</span>
+                    </button>
+                </div>
+                <p id="meme-toast" class="mt-3 font-pixel text-[10px] text-soviet-gold min-h-[1rem]"></p>
+
+            </div>
+        </div>
+
+        <!-- Animação 8-bit: subida da rampa -->
+        <section id="rampa" class="mb-14">
+            <div class="text-center mb-5">
+                <h2 class="font-russo text-3xl sm:text-4xl text-soviet-gold uppercase text-shadow-brutal">★ A Subida da Rampa ★</h2>
+                <p class="text-sm text-soviet-cream/80 mt-1">Em 8 bits, a cena do dia 1º de janeiro.</p>
+            </div>
+            <div class="constructivist-card rounded-2xl p-3 max-w-4xl mx-auto">
+                <canvas id="scene" width="320" height="180" class="w-full h-auto block bg-black rounded-lg border-2 border-black" role="img"
+                        aria-label="Animação em 8 bits de Jones Manoel subindo a rampa do Palácio do Planalto"></canvas>
+                <div class="flex items-center justify-between gap-3 mt-3 px-1">
+                    <span class="font-pixel text-[9px] sm:text-[10px] text-soviet-gold">01.01.2030 • 15H</span>
+                    <div class="flex gap-2">
+                        <button onclick="toggleScene()" class="constructivist-btn px-3 py-1.5 rounded-lg text-xs flex items-center gap-2">
+                            <svg class="w-4 h-4" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use id="scene-toggle-icon" href="#i-pause"/></svg>
+                            <span id="scene-toggle-text">Pausar</span>
+                        </button>
+                        <button onclick="restartScene()" class="constructivist-btn !bg-black !text-soviet-gold px-3 py-1.5 rounded-lg text-xs flex items-center gap-2">
+                            <svg class="w-4 h-4" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-replay"/></svg>
+                            <span>Reiniciar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Interativa: Acelerador da Revolução & Gerador de Decretos -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-14">
+
+            <!-- Card 1: Simulador de Aceleração Histórica (Mini-Game Clicker) -->
+            <div class="constructivist-card rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b-2 border-soviet-gold/40 pb-3 mb-4">
+                        <h2 class="font-russo text-xl sm:text-2xl text-soviet-gold uppercase flex items-center gap-2">
+                            <svg class="w-6 h-6" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-bolt"/></svg> Acelerador Dialético
+                        </h2>
+                        <span class="bg-black text-soviet-gold font-pixel text-[10px] px-2.5 py-1 rounded border border-soviet-gold">
+                            PRÁXIS ATIVA
+                        </span>
+                    </div>
+                    <p class="text-sm text-soviet-cream/90 mb-5">
+                        Está achando 2030 muito longe, camarada? Ajude a construir a consciência de classe e o shape revolucionário clicando abaixo!
+                    </p>
+
+                    <!-- Estatísticas Acumuladas pelo Usuário -->
+                    <div class="grid grid-cols-3 gap-2 mb-6 text-center">
+                        <div class="bg-black/50 border-2 border-soviet-gold/60 rounded-xl p-2.5">
+                            <div class="mb-1 flex justify-center text-soviet-gold"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-book"/></svg></div>
+                            <div id="stat-books" class="font-russo text-lg sm:text-xl text-soviet-gold">0</div>
+                            <div class="text-[11px] uppercase font-bold text-white/80">Losurdos Lidos</div>
+                        </div>
+                        <div class="bg-black/50 border-2 border-soviet-gold/60 rounded-xl p-2.5">
+                            <div class="mb-1 flex justify-center text-soviet-gold"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-dumbbell"/></svg></div>
+                            <div id="stat-reps" class="font-russo text-lg sm:text-xl text-soviet-gold">0</div>
+                            <div class="text-[11px] uppercase font-bold text-white/80">Séries de Supino</div>
+                        </div>
+                        <div class="bg-black/50 border-2 border-soviet-gold/60 rounded-xl p-2.5">
+                            <div class="mb-1 flex justify-center text-soviet-gold"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-corn"/></svg></div>
+                            <div id="stat-cuscuz" class="font-russo text-lg sm:text-xl text-soviet-gold">0</div>
+                            <div class="text-[11px] uppercase font-bold text-white/80">Kg de Cuscuz</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <button onclick="doPraxisClick(event)" class="w-full constructivist-btn py-4 px-6 rounded-xl text-base sm:text-lg flex items-center justify-center gap-3">
+                        <svg class="w-6 h-6" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-hammer"/></svg>
+                        <span>LER LOSURDO + FAZER SUPINO (+1 PRÁXIS)</span>
+                    </button>
+                    <div class="mt-3 flex justify-between items-center text-xs font-russo text-soviet-gold">
+                        <span id="praxis-rank">RANK ATUAL: SIMPATIZANTE DE SOFÁ</span>
+                        <span id="praxis-total">0 PONTOS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Gerador de Decretos Presidenciais de 2030 -->
+            <div class="constructivist-card rounded-2xl p-6 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center justify-between border-b-2 border-soviet-gold/40 pb-3 mb-4">
+                        <h2 class="font-russo text-xl sm:text-2xl text-soviet-gold uppercase flex items-center gap-2">
+                            <svg class="w-6 h-6" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-scroll"/></svg> Diário Oficial da União 2030
+                        </h2>
+                        <span class="bg-soviet-gold text-black font-russo text-xs px-2.5 py-0.5 rounded border border-black">
+                            DECRETO-LEI
+                        </span>
+                    </div>
+                    <p class="text-sm text-soviet-cream/90 mb-4">
+                        Consulte antecipadamente as medidas provisórias e decretos que serão assinados no primeiro dia de mandato em 1º de Janeiro de 2030:
+                    </p>
+
+                    <!-- Caixa do Decreto -->
+                    <div class="bg-soviet-cream text-black border-4 border-black rounded-xl p-4 shadow-inner min-h-[145px] flex flex-col justify-between relative">
+                        <div class="flex justify-between items-center border-b border-black/20 pb-1.5 mb-2 text-[11px] font-bold uppercase tracking-wider text-soviet-darkred">
+                            <span id="decree-number">DECRETO SOVIÉTICO Nº 001/2030</span>
+                            <span>BRASÍLIA-URSAL</span>
+                        </div>
+                        <p id="decree-text" class="font-inter font-extrabold text-sm sm:text-base leading-snug text-neutral-900 my-auto">
+                            "Fica instituído o programa 'Bolsa Maromba': todo trabalhador terá direito a 2 potes de Whey Isolado, 300g de Creatina pura e um exemplar de 'Contra-História do Liberalismo' por mês."
+                        </p>
+                        <div class="mt-3 pt-1.5 border-t border-black/20 flex justify-between items-center text-[11px] italic text-neutral-700">
+                            <span>Assinado: <strong>Camarada Presidente Jones Manoel</strong></span>
+                            <span class="not-italic font-russo text-soviet-red">★ CUMPRA-SE</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-5 flex gap-3">
+                    <button onclick="generateDecree()" class="flex-1 constructivist-btn py-3.5 px-4 rounded-xl text-sm sm:text-base flex items-center justify-center gap-2">
+                        <svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-dice"/></svg>
+                        <span>SORTEAR NOVO DECRETO DE 2030</span>
+                    </button>
+                    <button onclick="copyDecree()" class="constructivist-btn !bg-black !text-soviet-gold px-4 py-3.5 rounded-xl text-sm flex items-center justify-center" title="Copiar Decreto">
+                        <span id="copy-feedback"><svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-clipboard"/></svg></span>
+                    </button>
+                    <button onclick="shareDecree()" class="constructivist-btn !bg-soviet-red !text-soviet-gold px-4 py-3.5 rounded-xl text-sm flex items-center justify-center" title="Compartilhar decreto como imagem" aria-label="Compartilhar decreto como imagem">
+                        <svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-share"/></svg>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Seção: Os Ministérios do Governo Jones Manoel 2030 -->
+        <section class="mb-14">
+            <div class="text-center mb-8">
+                <h2 class="font-russo text-3xl sm:text-4xl text-soviet-gold uppercase text-shadow-brutal">
+                    ★ ESPLANADA DOS MINISTÉRIOS POPULARES 2030 ★
+                </h2>
+                <p class="text-sm sm:text-base text-soviet-cream/80 mt-1">
+                    Conheça as pastas estratégicas que transformarão o Brasil na maior potência maromba-socialista do planeta
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                <!-- Ministério 1 -->
+                <div class="constructivist-card rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-soviet-gold text-soviet-darkred border-2 border-black flex items-center justify-center mb-4 shadow-[3px_3px_0_#000]">
+                            <svg class="ministry-icon w-9 h-9" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-dumbbell" fill="currentColor"/></svg>
+                        </div>
+                        <h3 class="font-russo text-lg text-soviet-gold uppercase mb-2">
+                            Ministério do Shape & Hipertrofia Estatal
+                        </h3>
+                        <p class="text-xs sm:text-sm text-soviet-cream/90 leading-relaxed">
+                            Transformação de todas as academias de rede em Centros Olímpicos Populares. Proibido pular o treino de pernas sob pena de reeducação dialética.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-soviet-gold/30 text-[11px] font-russo text-soviet-gold flex justify-between">
+                        <span>META: 50CM DE BRAÇO</span>
+                        <span>PRIORIDADE MÁXIMA</span>
+                    </div>
+                </div>
+
+                <!-- Ministério 2 -->
+                <div class="constructivist-card rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-soviet-gold text-soviet-darkred border-2 border-black flex items-center justify-center mb-4 shadow-[3px_3px_0_#000]">
+                            <svg class="ministry-icon w-9 h-9" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-book" fill="currentColor"/></svg>
+                        </div>
+                        <h3 class="font-russo text-lg text-soviet-gold uppercase mb-2">
+                            Ministério dos Estudos Losurdianos
+                        </h3>
+                        <p class="text-xs sm:text-sm text-soviet-cream/90 leading-relaxed">
+                            Toda discussão de internet deverá conter no mínimo 4 citações bibliográficas de Domenico Losurdo, Frantz Fanon ou Clóvis Moura.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-soviet-gold/30 text-[11px] font-russo text-soviet-gold flex justify-between">
+                        <span>META: ZERO LIBERALISMO</span>
+                        <span>100% TEORIA</span>
+                    </div>
+                </div>
+
+                <!-- Ministério 3 -->
+                <div class="constructivist-card rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-soviet-gold text-soviet-darkred border-2 border-black flex items-center justify-center mb-4 shadow-[3px_3px_0_#000]">
+                            <svg class="ministry-icon w-9 h-9" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-club" fill="currentColor"/></svg>
+                        </div>
+                        <h3 class="font-russo text-lg text-soviet-gold uppercase mb-2">
+                            Ministério do Clube Náutico Capibaribe
+                        </h3>
+                        <p class="text-xs sm:text-sm text-soviet-cream/90 leading-relaxed">
+                            Estatização do futebol moderno e investimento de 2% do PIB para garantir que o Timbu vença a Champions League e o Mundial até 2032.
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-soviet-gold/30 text-[11px] font-russo text-soviet-gold flex justify-between">
+                        <span>SEDE: AFLITOS, RECIFE</span>
+                        <span>HEXACAMPEÃO</span>
+                    </div>
+                </div>
+
+                <!-- Ministério 4 -->
+                <div class="constructivist-card rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-soviet-gold text-soviet-darkred border-2 border-black flex items-center justify-center mb-4 shadow-[3px_3px_0_#000]">
+                            <svg class="ministry-icon w-9 h-9" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-corn" fill="currentColor"/></svg>
+                        </div>
+                        <h3 class="font-russo text-lg text-soviet-gold uppercase mb-2">
+                            Defesa da Soberania do Cuscuz Nordestino
+                        </h3>
+                        <p class="text-xs sm:text-sm text-soviet-cream/90 leading-relaxed">
+                            Fiscalização rigorosa contra qualquer tentativa de colocar sardinha, ervilha e ovo cozido em formato de bolo de pia. Cuscuz é flocão de milho, água e sal!
+                        </p>
+                    </div>
+                    <div class="mt-4 pt-3 border-t border-soviet-gold/30 text-[11px] font-russo text-soviet-gold flex justify-between">
+                        <span>C/ MANTEIGA DA TERRA</span>
+                        <span>PATRIMÔNIO URSAL</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Linha do tempo com fatos reais -->
+        <section class="constructivist-card rounded-2xl p-6 sm:p-8 max-w-3xl mx-auto mb-14">
+            <h2 class="font-russo text-2xl sm:text-3xl text-soviet-gold uppercase mb-1">Rumo a 2030: o que é fato</h2>
+            <p class="text-xs text-soviet-cream/70 mb-6">A piada é nossa; estes marcos estão em reportagens.</p>
+            <ol class="ml-2">
+                <li class="relative pl-6 pb-6 last:pb-0 border-l-4 border-soviet-gold/60">
+                    <svg class="absolute -left-[13px] top-0 w-5 h-5 text-soviet-gold" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star" fill="currentColor" stroke="#000" stroke-width="6"/></svg>
+                    <div class="font-russo text-soviet-gold text-sm">2021–22</div>
+                    <p class="text-sm text-soviet-cream/95">Pré-candidato e candidato ao governo de Pernambuco pelo PCB.</p>
+                    <p class="text-[11px] text-white/50 mt-0.5">Fonte: <a class="underline hover:text-white" href="https://www.diariodepernambuco.com.br/noticia/politica/2021/12/pcb-lanca-pre-candidatura-ao-governo-de-pernambuco.html" target="_blank" rel="noopener">Diário de Pernambuco</a></p>
+                </li>
+                <li class="relative pl-6 pb-6 last:pb-0 border-l-4 border-soviet-gold/60">
+                    <svg class="absolute -left-[13px] top-0 w-5 h-5 text-soviet-gold" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star" fill="currentColor" stroke="#000" stroke-width="6"/></svg>
+                    <div class="font-russo text-soviet-gold text-sm">2026</div>
+                    <p class="text-sm text-soviet-cream/95">Meme “é tabaco”: ele postou foto fumando, a internet especulou, e a resposta virou bordão.</p>
+                    <p class="text-[11px] text-white/50 mt-0.5">Fonte: <a class="underline hover:text-white" href="https://portaldeprefeitura.com.br/pernambuco/jones-manoel-posta-foto-fumando-e-faz-promessa-para-pos-eleicao/616575/" target="_blank" rel="noopener">Portal de Prefeitura</a></p>
+                </li>
+                <li class="relative pl-6 pb-6 last:pb-0 border-l-4 border-soviet-gold/60">
+                    <svg class="absolute -left-[13px] top-0 w-5 h-5 text-soviet-gold" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star" fill="currentColor" stroke="#000" stroke-width="6"/></svg>
+                    <div class="font-russo text-soviet-gold text-sm">OUT 2026</div>
+                    <p class="text-sm text-soviet-cream/95">Eleito deputado federal pelo PSOL de Pernambuco com 249.077 votos.</p>
+                    <p class="text-[11px] text-white/50 mt-0.5">Fonte: <a class="underline hover:text-white" href="https://www.diariodepernambuco.com.br/politica/2026/10/11725894-jones-manoel-apoia-lula-contra-flavio-mas-mantem-criticas-a-gestao-do-pt-houve-erros-graves.html" target="_blank" rel="noopener">Diário de Pernambuco</a></p>
+                </li>
+                <li class="relative pl-6 pb-6 last:pb-0 border-l-4 border-soviet-gold/60">
+                    <svg class="absolute -left-[13px] top-0 w-5 h-5 text-soviet-gold" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-star" fill="currentColor" stroke="#000" stroke-width="6"/></svg>
+                    <div class="font-russo text-soviet-gold text-sm">2030</div>
+                    <p class="text-sm text-soviet-cream/95">Segundo a imprensa, ele fala em reconstruir uma esquerda revolucionária com candidatura própria à Presidência.</p>
+                    <p class="text-[11px] text-white/50 mt-0.5">Fonte: <a class="underline hover:text-white" href="https://portaldeprefeitura.com.br/pernambuco/jones-manoel-voto-lula-esquerda-revolucionaria-candidato-presidencia/630699/" target="_blank" rel="noopener">Portal de Prefeitura</a></p>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Credencial oficial: gera PNG para compartilhar -->
+        <section id="credencial" class="constructivist-card rounded-2xl p-6 sm:p-8 max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+                <div class="md:col-span-6">
+                    <span class="bg-black text-soviet-gold font-russo text-xs px-3 py-1 rounded border border-soviet-gold uppercase">
+                        Credenciamento Oficial 2030
+                    </span>
+                    <h3 class="font-russo text-2xl sm:text-3xl text-white mt-2 mb-2 uppercase">
+                        Emita sua credencial para a posse
+                    </h3>
+                    <p class="text-sm text-soviet-cream/90 mb-5">
+                        Preencha, baixe a imagem e compartilhe no WhatsApp ou no Instagram.
+                    </p>
+
+                    <div class="space-y-3">
+                        <div>
+                            <label for="camarada-name" class="block font-russo text-xs text-soviet-gold uppercase mb-1">Nome completo</label>
+                            <input type="text" id="camarada-name" placeholder="Seu nome" maxlength="30" autocomplete="off"
+                                   oninput="updateCredentialCard()"
+                                   class="w-full bg-black/70 border-2 border-soviet-gold rounded-lg px-3.5 py-2 text-white font-bold focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="camarada-role" class="block font-russo text-xs text-soviet-gold uppercase mb-1">Função</label>
+                            <select id="camarada-role" onchange="updateCredentialCard()"
+                                    class="w-full bg-black/70 border-2 border-soviet-gold rounded-lg px-3.5 py-2 text-soviet-gold font-bold focus:outline-none">
+                                <option>Fiscal de Treino de Perna</option>
+                                <option>Revisor Oficial de Losurdo</option>
+                                <option>Sommelier de Cuscuz Pernambucano</option>
+                                <option>Comissário do Brega-Funk Soviético</option>
+                                <option>Embaixador Plenipotenciário da URSAL</option>
+                                <option>Zagueiro Titular do Náutico</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="camarada-photo" class="block font-russo text-xs text-soviet-gold uppercase mb-1">Sua foto (opcional)</label>
+                            <input type="file" id="camarada-photo" accept="image/*" onchange="loadCredentialPhoto(this)"
+                                   class="w-full text-sm text-soviet-cream file:mr-3 file:rounded file:border-2 file:border-black file:bg-soviet-gold file:px-3 file:py-1.5 file:font-bold file:text-soviet-darkred">
+                            <p class="text-[11px] text-white/50 mt-1">A foto fica só no seu aparelho; nada é enviado.</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <button onclick="downloadCredential()" class="constructivist-btn py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-download"/></svg>
+                            <span>Baixar PNG</span>
+                        </button>
+                        <button onclick="shareCredential()" class="constructivist-btn !bg-soviet-red !text-soviet-gold py-3 px-4 rounded-xl text-sm flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#i-share"/></svg>
+                            <span>Compartilhar</span>
+                        </button>
+                    </div>
+                    <p id="share-hint" class="text-xs text-soviet-gold mt-3 min-h-[1rem]"></p>
+                    <p class="text-[11px] text-white/50 mt-1">No celular, "Compartilhar" abre o menu com WhatsApp e Instagram. No computador, baixe a imagem e envie pelo app.</p>
+                </div>
+
+                <div class="md:col-span-6">
+                    <canvas id="credential-canvas" width="1080" height="1350"
+                            class="w-full h-auto rounded-xl border-4 border-soviet-gold shadow-2xl bg-black"
+                            role="img" aria-label="Prévia da credencial de posse"></canvas>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Meme -->
+    <footer class="relative z-20 border-t-4 border-black bg-black/80 text-center py-6 px-4 mt-12">
+        <p class="font-russo text-xs sm:text-sm text-soviet-gold tracking-wider uppercase mb-1">
+            ★ REPÚBLICA FEDERATIVA SOCIALISTA MAROMBA DO BRASIL • RUMO A 2030 ★
+        </p>
+        <p class="text-[11px] text-white/50 max-w-2xl mx-auto mb-2">Foto: perfil público de Jones Manoel no X.</p>
+        <p class="text-xs text-white/60 max-w-xl mx-auto">
+            Site humorístico / meme criado para entretenimento. Lembre-se de beber água, bater seus macros de proteína e manter a leitura em dia, camarada!
+        </p>
+    </footer>
+
+    <!-- Lógica JavaScript -->
+    <script>
+        const ico = (id, cls = 'w-4 h-4') =>
+            `<svg class="${cls}" viewBox="0 0 100 100" fill="currentColor" aria-hidden="true"><use href="#${id}"/></svg>`;
+
+        // ==========================================
+        // 1. CONTAGEM REGRESSIVA PARA 01/01/2030 15:00
+        // ==========================================
+        // A posse presidencial no Brasil ocorre em 1º de janeiro às 15h00 (Horário de Brasília)
+        const targetDate = new Date('2030-01-01T15:00:00-03:00').getTime();
+        const startDatePlan = new Date('2022-01-01T00:00:00-03:00').getTime();
+
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance <= 0) {
+                document.getElementById('cd-days').innerText = "0000";
+                document.getElementById('cd-hours').innerText = "00";
+                document.getElementById('cd-minutes').innerText = "00";
+                document.getElementById('cd-seconds').innerText = "00";
+                document.getElementById('dialectic-percentage').innerText = "100.00000% (A REVOLUÇÃO CHEGOU!)";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById('cd-days').innerText = String(days).padStart(4, '0');
+            document.getElementById('cd-hours').innerText = String(hours).padStart(2, '0');
+            document.getElementById('cd-minutes').innerText = String(minutes).padStart(2, '0');
+            document.getElementById('cd-seconds').innerText = String(seconds).padStart(2, '0');
+
+            // Barras de progresso visuais
+            document.getElementById('bar-hours').style.width = `${(hours / 24) * 100}%`;
+            document.getElementById('bar-minutes').style.width = `${(minutes / 60) * 100}%`;
+            document.getElementById('bar-seconds').style.width = `${(seconds / 60) * 100}%`;
+
+            // Porcentagem dialética com 5 casas decimais para parecer super dinâmico
+            const totalDuration = targetDate - startDatePlan;
+            const elapsed = now - startDatePlan;
+            const pct = Math.min(99.99999, Math.max(0, (elapsed / totalDuration) * 100));
+            document.getElementById('dialectic-percentage').innerText = pct.toFixed(5) + '%';
+        }
+
+        setInterval(updateCountdown, 100);
+        updateCountdown();
+
+        // ==========================================
+        // 2. FRASES DE EFEITO (PALAVRAS DE ORDEM)
+        // ==========================================
+        const catchphrases = [
+            "\"Nós, o povo soviético, exigimos Whey Protein subsidiado pelo Estado!\"",
+            "\"Camarada, como escreveu Domenico Losurdo na página 142: pular treino de perna é desvio pequeno-burguês!\"",
+            "\"A questão fundamental da revolução brasileira passa pelo Cuscuz com ovo e pela subida do Náutico para a Série A!\"",
+            "\"Veja bem, do ponto de vista marxista-leninista, 45cm de braço é o mínimo para o debate público!\"",
+            "\"Em 2030 não haverá um único liberal sem ter lido 'Contra-História do Liberalismo' de capa a capa!\"",
+            "\"A burocracia do Banco Central será substituída pelo Conselho Popular de Marombeiros de Recife!\"",
+            "\"Beba água, faça agachamento livre e organize-se no seu bairro, camarada!\""
+        ];
+
+        let lastPhraseIdx = 0;
+        function speakCatchphrase() {
+            let idx = Math.floor(Math.random() * catchphrases.length);
+            if (idx === lastPhraseIdx) idx = (idx + 1) % catchphrases.length;
+            lastPhraseIdx = idx;
+
+            const bubble = document.getElementById('speech-bubble');
+            bubble.innerText = catchphrases[idx];
+            bubble.classList.add('scale-105', 'bg-soviet-gold', 'text-black');
+            setTimeout(() => {
+                bubble.classList.remove('scale-105', 'bg-soviet-gold', 'text-black');
+            }, 300);
+
+            playSynthBlip('C5');
+            triggerRevolutionRain(15);
+        }
+
+        // ==========================================
+        // 2. ANIMAÇÃO 8-BIT: SUBIDA DA RAMPA
+        // ==========================================
+        const scene = document.getElementById('scene');
+        const g = scene.getContext('2d');
+        const G = 2; // cada "pixel" do jogo = 2x2 pixels do canvas (grade 160x90)
+        const R = (x, y, w, h, c) => { g.fillStyle = c; g.fillRect(Math.round(x) * G, Math.round(y) * G, w * G, h * G); };
+
+        const PAL = { h: '#15100a', s: '#8a5a38', S: '#6b4429', g: '#101010', w: '#ffffff', b: '#15100a',
+                      k: '#1b2b4d', r: '#c4161c', y: '#ffd23f', G: '#00963a', p: '#12182b', o: '#050505' };
+        const HEAD = [
+            "...hhhhhhhh...", "..hhhhhhhhhh..", ".hhhhhhhhhhhh.", ".hhsssssssshh.",
+            "..sgggssgggs..", "..sgwgssgwgs..", "..sgggssgggs..", ".bbssssssssbb.",
+            "..bbbsssbbb...", "..bbbbbbbbbb..", "...bbbbbbbb..."
+        ];
+        const TORSO = [
+            "....kwrrwk....", "..kkkwrrwkkk..", ".kkkkkrrkkkkk.", ".kkkkkrrkkkkk.",
+            ".kkkkkkrkkkkk.", ".kkkkkkkkkkkk.", "..kkkkkkkkkk.."
+        ];
+        const LEGS = [
+            [ "..pppppppppp..", "..pppp..pppp..", "..pppp..pppp..", "..pppp..pppp..", "..oooo..oooo..", ".ooooo..ooooo." ],
+            [ "..pppppppppp..", "..pppp..pppp..", "..pppp..pppp..", "..pppp..pppp..", "........oooo..", "........ooooo." ]
+        ];
+
+        function drawJones(cx, footY, step, fist) {
+            const x0 = cx - 7, y0 = footY - 24;
+            const put = (rows, ry) => rows.forEach((row, j) => [...row].forEach((ch, i) => { if (ch !== '.') R(x0 + i, y0 + ry + j, 1, 1, PAL[ch]); }));
+            put(HEAD, 0); put(TORSO, 11); put(LEGS[step], 18);
+            // faixa presidencial
+            for (let k = 0; k < 6; k++) { R(x0 + 3 + k, y0 + 12 + k, 1, 1, PAL.y); R(x0 + 2 + k, y0 + 12 + k, 1, 1, PAL.G); }
+            // braços
+            R(x0, y0 + 14, 1, 5, PAL.k); R(x0, y0 + 19, 1, 1, PAL.s);
+            if (fist) {
+                R(x0 + 12, y0 + 8, 2, 6, PAL.k); R(x0 + 12, y0 + 5, 2, 3, PAL.s); R(x0 + 12, y0 + 7, 2, 1, PAL.S);
+            } else {
+                R(x0 + 13, y0 + 14, 1, 5, PAL.k); R(x0 + 13, y0 + 19, 1, 1, PAL.s);
+            }
+        }
+
+        const SKY = ['#2b4c8c', '#3a62a3', '#4d7bb8', '#6b95c8', '#8fb0d6', '#b4c9e0', '#f0c9a0', '#f6d8a8', '#fbe6bd'];
+        const CARPET_Y = 62;
+        const rampY = x => x >= 34 ? CARPET_Y : 78 - (x - 4) * (16 / 30);
+
+        function cloud(x, y) { R(x + 2, y, 6, 1, '#fff'); R(x, y + 1, 10, 1, '#fff'); R(x + 1, y + 2, 9, 1, '#e8eef7'); }
+
+        function drawFlag(t) {
+            R(152, 6, 1, 32, '#d9d9d9'); R(151, 5, 3, 1, '#ffd23f');
+            for (let i = 0; i < 20; i++) {
+                const yo = Math.round(Math.sin(t * 4 + i * 0.55) * 1.2);
+                for (let j = 0; j < 14; j++) {
+                    let c = '#009c3b';
+                    const hw = Math.floor(9 * (1 - Math.abs(j - 6.5) / 7));
+                    if (Math.abs(i - 9.5) <= hw) c = '#ffd23f';
+                    if (Math.hypot(i - 9.5, j - 6.5) < 3.4) c = '#002776';
+                    R(132 + i, 8 + yo + j, 1, 1, c);
+                }
+            }
+        }
+
+        function drawBackground(t) {
+            SKY.forEach((c, i) => R(0, i * 7, 160, i === SKY.length - 1 ? 20 : 7, c));
+            // sol
+            for (let y = -5; y <= 5; y++) for (let x = -5; x <= 5; x++) if (x * x + y * y <= 25) R(118 + x, 14 + y, 1, 1, '#ffe08a');
+            // nuvens
+            [[0, 12, 3], [60, 26, 2], [100, 6, 4]].forEach(([b, y, sp]) => cloud(((b + t * sp) % 190) - 20, y));
+            // Palácio do Planalto
+            R(36, 34, 116, 4, '#f4f1e8'); R(36, 38, 116, 1, '#c9c4b4');
+            R(40, 39, 108, 22, '#1c3556');
+            for (let i = 0; i < 9; i++) R(44 + i * 12, 40, 3, 20, '#27487a');
+            for (let i = 0; i < 14; i++) { R(40 + i * 8, 38, 2, 24, '#f4f1e8'); R(40 + i * 8, 38, 1, 24, '#d8d3c3'); }
+            R(34, 61, 120, 3, '#d8d3c3'); R(34, 64, 120, 14, '#c9c4b4');
+            for (let i = 0; i < 12; i++) R(38 + i * 10, 66, 4, 10, '#a9a494');
+            // gramado e rampa
+            R(0, 78, 160, 12, '#4f7a3f'); R(0, 84, 160, 6, '#3f6633');
+            for (let x = 4; x < 34; x++) { const y = rampY(x); R(x, y, 1, 2, '#b3141c'); R(x, y + 2, 1, 78 - y - 2, '#8c8c8c'); }
+            R(34, CARPET_Y, 120, 2, '#b3141c');
+            drawFlag(t);
+        }
+
+        const CAPTION = 'NOS, O POVO SOVIETICO!';
+        let sceneT = 0, sceneRunning = true, lastTs = 0, confetti = [];
+        const LOOP = 14;
+
+        function drawScene(t) {
+            drawBackground(t);
+            const T = t % LOOP;
+            let x, step = 0, fist = false;
+            if (T < 5) { x = 8 + (T / 5) * 68; step = Math.floor(T * 5) % 2; }
+            else { x = 76; fist = T > 5.6; }
+            const bob = (T < 5 && step === 1) ? 1 : 0;
+            drawJones(Math.round(x), rampY(x) - bob, step, fist);
+
+            // faixa de título
+            R(0, 0, 160, 8, 'rgba(0,0,0,.55)');
+            g.fillStyle = '#ffd23f'; g.font = '7px "Press Start 2P", monospace'; g.textBaseline = 'top';
+            g.fillText('JONES MANOEL PRESIDENTE', 8, 5);
+
+            // legenda
+            if (T >= 6) {
+                const n = Math.min(CAPTION.length, Math.floor((T - 6) * 8));
+                R(26, 79, 108, 9, '#000'); R(26, 79, 108, 1, '#FFD700'); R(26, 87, 108, 1, '#FFD700');
+                g.fillStyle = '#FFD700'; g.textAlign = 'center'; g.fillText(CAPTION.slice(0, n), 160, 164); g.textAlign = 'left';
+            }
+            // confete pixelado
+            if (fist && T < 11 && Math.random() < 0.6) {
+                confetti.push({ x: 40 + Math.random() * 90, y: 8, vy: 0.4 + Math.random() * 0.6, c: ['#ffd23f', '#009c3b', '#c4161c', '#ffffff'][Math.floor(Math.random() * 4)] });
+            }
+            confetti = confetti.filter(p => (p.y += p.vy) < 78);
+            confetti.forEach(p => R(p.x, p.y, 1, 1, p.c));
+            // transição de saída
+            if (T > 13.2) R(0, 0, 160, 90, `rgba(0,0,0,${(T - 13.2) / 0.8})`);
+        }
+
+        function sceneLoop(ts) {
+            if (sceneRunning) { sceneT += Math.min(0.1, (ts - lastTs) / 1000); drawScene(sceneT); }
+            lastTs = ts;
+            requestAnimationFrame(sceneLoop);
+        }
+
+        function toggleScene() {
+            sceneRunning = !sceneRunning;
+            document.getElementById('scene-toggle-text').innerText = sceneRunning ? 'Pausar' : 'Continuar';
+            document.getElementById('scene-toggle-icon').setAttribute('href', sceneRunning ? '#i-pause' : '#i-play');
+        }
+        function restartScene() { sceneT = 0; confetti = []; if (!sceneRunning) { toggleScene(); } }
+
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        const startScene = () => {
+            if (reduceMotion) { sceneT = 8; sceneRunning = false; document.getElementById('scene-toggle-text').innerText = 'Continuar'; document.getElementById('scene-toggle-icon').setAttribute('href', '#i-play'); }
+            drawScene(sceneT);
+            requestAnimationFrame(ts => { lastTs = ts; sceneLoop(ts); });
+        };
+        if (document.fonts && document.fonts.load) document.fonts.load('7px "Press Start 2P"').then(startScene, startScene); else startScene();
+
+        // ==========================================
+        // 3. GERADOR DE DECRETOS DE 2030
+        // ==========================================
+        const decrees = [
+            {
+                num: "DECRETO SOVIÉTICO Nº 001/2030",
+                text: "\"Fica instituído o programa 'Bolsa Maromba': todo trabalhador terá direito a 2 potes de Whey Isolado, 300g de Creatina pura e um exemplar de 'Contra-História do Liberalismo' por mês.\""
+            },
+            {
+                num: "DECRETO SOVIÉTICO Nº 017/2030",
+                text: "\"Fica terminantemente proibido chamar aquela massa fria com sardinha e ervilha de 'Cuscuz Paulista'. Infratores serão enviados para colheita de milho no interior de Pernambuco.\""
+            },
+            {
+                num: "DECRETO SOVIÉTICO Nº 045/2030",
+                text: "\"A taxa Selic do Banco Central passa a ser definida pela carga máxima que o Presidente da República levantar no Supino Reto toda quarta-feira.\""
+            },
+            {
+                num: "DECRETO SOVIÉTICO Nº 1917/2030",
+                text: "\"A frase 'Nós, o Povo Soviético' passa a ser o cumprimento oficial obrigatório em todas as repartições públicas, academias de bairro e padarias da URSAL.\""
+            },
+            {
+                num: "DECRETO SOVIÉTICO Nº 081/2030",
+                text: "\"Por determinação histórica e dialética, o Clube Náutico Capibaribe é declarado Campeão Perpétuo de todos os torneios continentais da FIFA.\""
+            },
+            {
+                num: "DECRETO SOVIÉTICO Nº 332/2030",
+                text: "\"Todo podcast de 'mindset empreendedor' terá seus microfones confiscados e convertidos em rádios comunitárias tocando Brega-Funk e audiolivros de Frantz Fanon.\""
+            },
+            {
+                num: "DECRETO SOVIÉTICO Nº 500/2030",
+                text: "\"A jornada de trabalho é reduzida para 4 dias por semana, sendo a sexta-feira reservada constitucionalmente para treino de perna pesado e leitura coletiva.\""
+            }
+        ];
+
+        let currentDecreeIndex = 0;
+        function generateDecree() {
+            currentDecreeIndex = (currentDecreeIndex + 1) % decrees.length;
+            const d = decrees[currentDecreeIndex];
+            document.getElementById('decree-number').innerText = d.num;
+            document.getElementById('decree-text').innerText = d.text;
+            playSynthBlip('E5');
+        }
+
+        function copyDecree() {
+            const num = document.getElementById('decree-number').innerText;
+            const txt = document.getElementById('decree-text').innerText;
+            const fullText = `${num} - ${txt} (Posse Jones Manoel 2030)`;
+
+            const tempInput = document.createElement('textarea');
+            tempInput.value = fullText;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            const fb = document.getElementById('copy-feedback');
+            fb.innerHTML = ico("i-check", "w-5 h-5");
+            setTimeout(() => { fb.innerHTML = ico('i-clipboard', 'w-5 h-5'); }, 1500);
+        }
+
+        // ==========================================
+        // 4. MINI-GAME: ACELERADOR DIALÉTICO
+        // ==========================================
+        let praxisPoints = 0;
+        let booksRead = 0;
+        let benchReps = 0;
+        let cuscuzKg = 0;
+
+        const ranks = [
+            { min: 0, title: "SIMPATIZANTE DE SOFÁ" },
+            { min: 5, title: "INICIANTE NO FLOCÃO DE MILHO" },
+            { min: 15, title: "LEITOR DE NOTA DE RODAPÉ DO LOSURDO" },
+            { min: 30, title: "MAROMBEIRO DO COMITÊ CENTRAL" },
+            { min: 50, title: "VANGUARDA PROLETÁRIA DE RECIFE" },
+            { min: 100, title: "LÍDER SUPREMO DO SHAPE SOVIÉTICO" }
+        ];
+
+        function doPraxisClick(e) {
+            praxisPoints++;
+            booksRead += Math.floor(Math.random() * 2) + 1;
+            benchReps += 10;
+            cuscuzKg += 2;
+
+            document.getElementById('stat-books').innerText = booksRead;
+            document.getElementById('stat-reps').innerText = benchReps;
+            document.getElementById('stat-cuscuz').innerText = cuscuzKg;
+            document.getElementById('praxis-total').innerText = `${praxisPoints} PONTOS`;
+
+            // Atualiza Rank
+            let currentRank = ranks[0].title;
+            for (const r of ranks) {
+                if (praxisPoints >= r.min) currentRank = r.title;
+            }
+            document.getElementById('praxis-rank').innerText = `RANK: ${currentRank}`;
+
+            // Som e chuva leve
+            playSynthBlip('G5');
+            triggerRevolutionRain(8);
+        }
+
+        // ==========================================
+        // 5. CREDENCIAL OFICIAL (PNG PARA COMPARTILHAR)
+        // ==========================================
+        const credCanvas = document.getElementById('credential-canvas');
+        const credCtx = credCanvas.getContext('2d');
+        let credPhoto = null;
+
+        function svgToImage(id, color) {
+            const sym = document.getElementById(id);
+            const vb = sym.getAttribute('viewBox');
+            const img = new Image();
+            img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(
+                `<svg xmlns="http://www.w3.org/2000/svg" viewBox="${vb}" width="400" height="400" fill="${color}" color="${color}">${sym.innerHTML}</svg>`);
+            return img;
+        }
+        const credHS = svgToImage('i-hs', '#FFD700');
+        const credStar = svgToImage('i-star', '#FFD700');
+
+        function loadCredentialPhoto(input) {
+            const file = input.files && input.files[0];
+            if (!file) { credPhoto = null; drawCredential(); return; }
+            const img = new Image();
+            img.onload = () => { credPhoto = img; drawCredential(); URL.revokeObjectURL(img.src); };
+            img.src = URL.createObjectURL(file);
+        }
+
+        function credentialId(name) {
+            let h = 2166136261;
+            for (const ch of (name || 'ANONIMO').toUpperCase()) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619) >>> 0; }
+            return h;
+        }
+
+        function fitText(ctx, text, maxW, size, font) {
+            do { ctx.font = `${size}px ${font}`; size -= 2; } while (ctx.measureText(text).width > maxW && size > 24);
+        }
+
+        function drawCredential() {
+            const c = credCtx, W = 1080, H = 1350;
+            const name = (document.getElementById('camarada-name').value.trim() || 'NOME DO PORTADOR').toUpperCase();
+            const role = document.getElementById('camarada-role').value;
+            const hash = credentialId(document.getElementById('camarada-name').value);
+            const num = 'JM-2030-' + hash.toString(16).toUpperCase().padStart(8, '0').slice(0, 6);
+
+            // fundo
+            const bg = c.createLinearGradient(0, 0, 0, H);
+            bg.addColorStop(0, '#8a0000'); bg.addColorStop(1, '#3a0000');
+            c.fillStyle = bg; c.fillRect(0, 0, W, H);
+            c.save(); c.globalAlpha = 0.07; c.translate(W / 2, 640);
+            for (let i = 0; i < 24; i++) { c.rotate(Math.PI / 12); c.fillStyle = '#000'; c.beginPath(); c.moveTo(0, 0); c.lineTo(1400, -60); c.lineTo(1400, 60); c.fill(); }
+            c.restore();
+
+            // moldura
+            c.strokeStyle = '#FFD700'; c.lineWidth = 10; c.strokeRect(36, 36, W - 72, H - 72);
+            c.lineWidth = 2; c.strokeRect(58, 58, W - 116, H - 116);
+
+            c.textAlign = 'center'; c.fillStyle = '#FFD700';
+            // cabeçalho
+            if (credHS.complete) c.drawImage(credHS, W / 2 - 60, 90, 120, 120);
+            c.font = '40px "Russo One", sans-serif';
+            c.fillText('CERIMÔNIA DE POSSE PRESIDENCIAL', W / 2, 270);
+            c.fillStyle = '#FFF8E7'; c.font = '34px "Bebas Neue", sans-serif';
+            c.fillText('CREDENCIAL OFICIAL  •  JONES MANOEL PRESIDENTE', W / 2, 318);
+            c.fillStyle = '#FFD700'; c.fillRect(120, 340, W - 240, 4);
+
+            // foto
+            const px = W / 2 - 230, py = 380, pw = 460, ph = 520;
+            c.fillStyle = '#1a0000'; c.fillRect(px, py, pw, ph);
+            if (credPhoto) {
+                const r = Math.max(pw / credPhoto.width, ph / credPhoto.height);
+                const w = credPhoto.width * r, h = credPhoto.height * r;
+                c.save(); c.beginPath(); c.rect(px, py, pw, ph); c.clip();
+                c.drawImage(credPhoto, px + (pw - w) / 2, py + (ph - h) / 2, w, h); c.restore();
+            } else {
+                c.save(); c.globalAlpha = 0.25;
+                if (credStar.complete) c.drawImage(credStar, px + 80, py + 90, 300, 300);
+                c.restore();
+                c.fillStyle = '#FFD700'; c.font = '26px "Russo One", sans-serif';
+                c.fillText('FOTO', W / 2, py + ph - 40);
+            }
+            c.strokeStyle = '#FFD700'; c.lineWidth = 8; c.strokeRect(px, py, pw, ph);
+
+            // nome e função
+            c.fillStyle = '#FFD700'; c.font = '28px "Russo One", sans-serif';
+            c.fillText('PORTADOR(A)', W / 2, 960);
+            c.fillStyle = '#FFFFFF'; fitText(c, name, W - 200, 76, '"Russo One", sans-serif');
+            c.fillText(name, W / 2, 1035);
+            c.fillStyle = '#FFD700'; c.font = '38px "Bebas Neue", sans-serif';
+            c.fillText(role.toUpperCase(), W / 2, 1090);
+
+            // dados e código de barras
+            c.fillStyle = '#FFD700'; c.fillRect(120, 1125, W - 240, 3);
+            c.textAlign = 'left'; c.fillStyle = '#FFF8E7'; c.font = '30px "Inter", sans-serif';
+            c.fillText('Nº ' + num, 120, 1180);
+            c.fillText('01.01.2030 • 15h • Brasília', 120, 1224);
+            let x = W - 120, seed = hash;
+            c.fillStyle = '#FFF8E7';
+            for (let i = 0; i < 38; i++) {
+                seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
+                const bw = 3 + (seed % 3) * 3;
+                x -= bw + 3; c.fillRect(x, 1148, bw, 92);
+            }
+            c.textAlign = 'center'; c.fillStyle = 'rgba(255,248,231,.6)'; c.font = '22px "Inter", sans-serif';
+            c.fillText('Credencial simbólica de site humorístico • não é documento oficial', W / 2, 1290);
+        }
+
+        function updateCredentialCard() { drawCredential(); }
+
+        function credentialBlob() {
+            return new Promise(res => credCanvas.toBlob(res, 'image/png'));
+        }
+
+        function credentialFileName() {
+            const n = document.getElementById('camarada-name').value.trim().toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+            return `credencial-posse-2030${n ? '-' + n : ''}.png`;
+        }
+
+        async function downloadCredential() {
+            const blob = await credentialBlob();
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = credentialFileName();
+            document.body.appendChild(a); a.click(); a.remove();
+            setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+            document.getElementById('share-hint').innerText = 'Imagem baixada. Agora é só enviar no WhatsApp ou Instagram.';
+        }
+
+        async function shareCredential() {
+            const hint = document.getElementById('share-hint');
+            const blob = await credentialBlob();
+            const file = new File([blob], credentialFileName(), { type: 'image/png' });
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                try {
+                    await navigator.share({ files: [file], title: 'Credencial de posse 2030', text: 'Minha credencial para a posse de Jones Manoel em 2030!' });
+                    return;
+                } catch (err) {
+                    if (err.name === 'AbortError') return;
+                }
+            }
+            await downloadCredential();
+            hint.innerText = 'Seu navegador não abre o menu de compartilhar; a imagem foi baixada para você enviar pelo app.';
+        }
+
+        if (document.fonts && document.fonts.load) {
+            Promise.all([
+                document.fonts.load('40px "Russo One"'),
+                document.fonts.load('34px "Bebas Neue"'),
+                document.fonts.load('30px Inter')
+            ]).then(drawCredential, drawCredential);
+        }
+        [credHS, credStar].forEach(i => { i.onload = drawCredential; });
+        drawCredential();
+
+        // ==========================================
+        // 6. ÁUDIO SINTETIZADO (TONE.JS - HINO 8-BIT)
+        // ==========================================
+        let isPlayingMusic = false;
+        let anthemSequence = null;
+        let synth = null;
+
+        function playSynthBlip(note = 'C5') {
+            if (typeof Tone === 'undefined') return;
+            try {
+                const beep = new Tone.Synth({
+                    oscillator: { type: 'square' },
+                    envelope: { attack: 0.01, decay: 0.1, sustain: 0, release: 0.1 }
+                }).toDestination();
+                beep.volume.value = -14;
+                beep.triggerAttackRelease(note, '16n');
+            } catch (err) {
+                // Ignora caso o contexto de áudio ainda não tenha sido iniciado
+            }
+        }
+
+        async function toggleAnthem() {
+            if (typeof Tone === 'undefined') return;
+
+            await Tone.start();
+
+            if (!synth) {
+                synth = new Tone.PolySynth(Tone.Synth, {
+                    oscillator: { type: "square" },
+                    envelope: { attack: 0.02, decay: 0.15, sustain: 0.2, release: 0.2 }
+                }).toDestination();
+                synth.volume.value = -12;
+
+                // Melodia estilo marcha heroica 8-bit inspirada em temas clássicos
+                const melody = [
+                    ["G4", "4n"], ["C5", "2n"], ["G4", "4n"], ["A4", "4n"],
+                    ["B4", "2n"], ["E4", "4n"], ["E4", "4n"],
+                    ["A4", "2n"], ["G4", "4n"], ["F4", "4n"],
+                    ["G4", "2n"], ["C4", "4n"], ["C4", "4n"],
+                    ["D4", "2n"], ["D4", "4n"], ["E4", "4n"],
+                    ["F4", "2n"], ["F4", "4n"], ["G4", "4n"],
+                    ["A4", "2n"], ["B4", "4n"], ["C5", "4n"],
+                    ["D5", "2n"], [null, "4n"]
+                ];
+
+                let step = 0;
+                anthemSequence = new Tone.Loop((time) => {
+                    const [note, dur] = melody[step % melody.length];
+                    if (note) {
+                        synth.triggerAttackRelease(note, dur, time);
+                    }
+                    step++;
+                }, "4n");
+
+                Tone.Transport.bpm.value = 135;
+            }
+
+            const btnIcon = document.getElementById('music-icon');
+            const btnText = document.getElementById('music-text');
+
+            if (!isPlayingMusic) {
+                Tone.Transport.start();
+                anthemSequence.start(0);
+                isPlayingMusic = true;
+                btnIcon.innerHTML = ico("i-sound-on", "w-5 h-5");
+                btnText.innerText = "PAUSAR HINO 8-BIT";
+            } else {
+                anthemSequence.stop();
+                Tone.Transport.stop();
+                isPlayingMusic = false;
+                btnIcon.innerHTML = ico("i-sound-off", "w-5 h-5");
+                btnText.innerText = "TOCAR HINO 8-BIT";
+            }
+        }
+
+        // ==========================================
+        // 7. SISTEMA DE PARTÍCULAS (CHUVA DA REVOLUÇÃO)
+        // ==========================================
+        const canvas = document.getElementById('confetti-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const particleIcons = ['i-hs', 'i-star', 'i-book', 'i-dumbbell', 'i-corn', 'i-flag', 'i-flame', 'i-fist'];
+        const particleColors = ['#FFD700', '#FFF8E7', '#FF3B30'];
+        const particleImgs = [];
+        particleIcons.forEach(id => {
+            const sym = document.getElementById(id);
+            particleColors.forEach(c => {
+                const img = new Image();
+                img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(
+                    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="64" height="64" fill="${c}" color="${c}">${sym.innerHTML}</svg>`);
+                particleImgs.push(img);
+            });
+        });
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        function triggerRevolutionRain(count = 40) {
+            for (let i = 0; i < count; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: -30 - Math.random() * 100,
+                    vx: (Math.random() - 0.5) * 4,
+                    vy: Math.random() * 4 + 3,
+                    size: Math.random() * 18 + 16,
+                    img: particleImgs[Math.floor(Math.random() * particleImgs.length)],
+                    rotation: Math.random() * Math.PI * 2,
+                    vRot: (Math.random() - 0.5) * 0.1
+                });
+            }
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = particles.length - 1; i >= 0; i--) {
+                const p = particles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+                p.rotation += p.vRot;
+
+                ctx.save();
+                ctx.translate(p.x, p.y);
+                ctx.rotate(p.rotation);
+                if (p.img.complete) ctx.drawImage(p.img, -p.size / 2, -p.size / 2, p.size, p.size);
+                ctx.restore();
+
+                if (p.y > canvas.height + 50) {
+                    particles.splice(i, 1);
+                }
+            }
+
+            requestAnimationFrame(animateParticles);
+        }
+
+
+        // ==========================================
+        // 8. COMPARTILHAMENTO E MEMES
+        // ==========================================
+        function daysLeft() {
+            return Math.max(0, Math.floor((targetDate - Date.now()) / 86400000));
+        }
+
+        function shareCountdownWhatsApp() {
+            const text = `Faltam ${daysLeft()} dias para a posse de Jones Manoel Presidente! ${location.href}`;
+            window.open('https://wa.me/?text=' + encodeURIComponent(text), '_blank', 'noopener');
+        }
+
+        async function copyPageLink() {
+            const fb = document.getElementById('link-feedback');
+            try {
+                await navigator.clipboard.writeText(location.href);
+                fb.innerText = 'LINK COPIADO!';
+            } catch (err) {
+                fb.innerText = 'COPIE DA BARRA';
+            }
+            setTimeout(() => { fb.innerText = 'COPIAR LINK'; }, 1800);
+        }
+
+        const tabacoLines = [
+            'É tabaco, camarada.',
+            'Se fosse erva, eu também falava. É tabaco.',
+            'Parar de fumar só depois da eleição. É tabaco.'
+        ];
+        let tabacoIdx = 0;
+        function etabaco() {
+            document.getElementById('meme-toast').innerText = tabacoLines[tabacoIdx++ % tabacoLines.length];
+            playSynthBlip('A4');
+            triggerRevolutionRain(14);
+        }
+
+        function wrapText(ctx, text, maxW) {
+            const words = text.split(' '), lines = [];
+            let line = '';
+            for (const w of words) {
+                const t = line ? line + ' ' + w : w;
+                if (ctx.measureText(t).width > maxW && line) { lines.push(line); line = w; } else line = t;
+            }
+            if (line) lines.push(line);
+            return lines;
+        }
+
+        async function shareCanvasImage(canvas, filename, text) {
+            const blob = await new Promise(res => canvas.toBlob(res, 'image/png'));
+            const file = new File([blob], filename, { type: 'image/png' });
+            if (navigator.canShare && navigator.canShare({ files: [file] })) {
+                try { await navigator.share({ files: [file], text }); return; }
+                catch (err) { if (err.name === 'AbortError') return; }
+            }
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = filename;
+            document.body.appendChild(a); a.click(); a.remove();
+            setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+        }
+
+        async function shareDecree() {
+            if (document.fonts) await Promise.all([document.fonts.load('40px "Russo One"'), document.fonts.load('30px Inter')]);
+            const cv = document.createElement('canvas');
+            cv.width = 1080; cv.height = 1080;
+            const c = cv.getContext('2d');
+            const num = document.getElementById('decree-number').innerText;
+            const txt = document.getElementById('decree-text').innerText.replace(/^"|"$/g, '');
+
+            c.fillStyle = '#6b0000'; c.fillRect(0, 0, 1080, 1080);
+            c.fillStyle = '#FFF8E7'; c.fillRect(60, 60, 960, 960);
+            c.strokeStyle = '#FFD700'; c.lineWidth = 10; c.strokeRect(60, 60, 960, 960);
+            c.fillStyle = '#CC0000'; c.fillRect(60, 60, 960, 150);
+            c.textAlign = 'center'; c.fillStyle = '#FFD700';
+            c.font = '46px "Russo One", sans-serif';
+            c.fillText(num, 540, 145);
+            c.fillStyle = '#7A0000'; c.font = '26px "Russo One", sans-serif';
+            c.fillText('DIÁRIO OFICIAL DA UNIÃO 2030', 540, 265);
+
+            c.fillStyle = '#111'; c.font = '800 54px Inter, sans-serif';
+            let size = 54, lines;
+            do { c.font = `800 ${size}px Inter, sans-serif`; lines = wrapText(c, txt, 800); size -= 2; } while (lines.length * size * 1.3 > 520 && size > 28);
+            const lh = size * 1.3 + 2;
+            let y = 540 - (lines.length * lh) / 2 + lh * 0.7;
+            lines.forEach(l => { c.fillText(l, 540, y); y += lh; });
+
+            c.fillStyle = '#7A0000'; c.font = '28px Inter, sans-serif';
+            c.fillText('Assinado: Camarada Presidente Jones Manoel', 540, 900);
+            c.fillStyle = '#CC0000'; c.font = '34px "Russo One", sans-serif';
+            c.fillText('★ CUMPRA-SE ★', 540, 960);
+
+            await shareCanvasImage(cv, 'decreto-2030.png', 'Decreto de 2030: ' + location.href);
+        }
+
+        window.onload = function () {
+            animateParticles();
+            // Dispara uma pequena comemoração ao abrir o site
+            setTimeout(() => triggerRevolutionRain(25), 400);
+        };
+    </script>
+</body>
+</html>
